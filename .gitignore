@@ -1,0 +1,118 @@
+/skin/frontend/smartwave/porto/css/configed/design_hr.css
+### MAGENTO DIRECTORIES
+.bash_history
+.cache/
+.viminfo
+error.log
+sitemap.xml
+
+# Ignore everything in media, except for the htaccess files
+/media/*/*
+!/media/customer/.htaccess
+!/media/downloadable/.htaccess
+!/media/.htaccess
+
+/dev/*
+
+# Ignore downloader cache and configuration files
+/downloader/.cache/
+/downloader/connect.cfg
+
+# Ignore var directory, except for the htaccess file
+/var/*
+!/var/.htaccess
+!/var/package
+/var/package/tmp
+
+### CONFIGURATION
+# These are specific to each environment
+
+/app/etc/local.xml
+/errors/local.xml
+/app/etc/enterprise.xml
+/.htaccess
+
+
+### MAGENTO MISC FILES
+# Note: index.php.sample is used to create new stores so you might want to keep this
+
+/.htaccess.sample
+/index.php.sample
+/install.php
+README
+RELEASE_NOTES.txt
+/php.ini.sample
+sweet_tooth_license.txt
+EVOLVED_EULA.rtf
+/pkginfo/
+/maintenance.flag
+/includes/src/*
+
+
+### TEMPORARY FILES
+
+*~
+
+
+### SNAPSHOT DUMPS
+
+/snapshot/
+
+
+### CSS AND SASS CACHE
+# Any SASS and compiled stylesheets except for base and default since these might be used in fallbacks
+# Comment out if not using SASS
+
+.sass-cache/
+/sass-cache/
+
+
+### BUNDLER
+# If you're using bundler to manage Gems (like Sass, Compass, etc)
+
+/.bundle/
+
+
+### NPM
+
+/npm-debug.log
+
+
+### IDE'S AND/OR CI
+
+.DS_Store
+Thumbs.db
+.phpintel
+*.sublime-project
+*.sublime-workspace
+/.idea
+/.buildpath/
+/.project/
+/.settings/
+/nbproject/
+/module_sources/
+/database_dumps/
+.phpstorm.meta.php
+
+### TESTING
+
+/firegento.php
+
+
+### MODMAN
+
+/.modman/
+
+
+### COMPOSER
+# Comment out if you're not using Magento hackathons copy deploystrategy
+
+#/vendor/
+
+
+### PROJECT SPECIFIC
+# add your project specific gitignore entries here
+
+*.map
+*.orig
+node_modules

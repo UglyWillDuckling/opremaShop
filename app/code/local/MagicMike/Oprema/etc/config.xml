@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MagicMike_Oprema>
+            <version>0.1.0</version>
+        </MagicMike_Oprema>
+    </modules>
+    <global>
+        <helpers>
+            <magicmike_oprema>
+                <class>MagicMike_Oprema_Helper</class>
+            </magicmike_oprema>
+        </helpers>
+    </global>
+    <crontab>
+        <jobs>
+            <oprema_update_stock>
+                <schedule>
+                    <cron_expr>*/15 * * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>magicmike_oprema/import/stanje::opremaUpdateStock</model>
+                </run>
+            </oprema_update_stock>
+        </jobs>
+    </crontab>
+</config>
