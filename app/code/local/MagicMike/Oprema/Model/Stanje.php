@@ -1,12 +1,12 @@
 <?php
 
-class MagicMike_Oprema_Model_Import_Stanje
+class MagicMike_Oprema_Model_Stanje
 {
 
     public function opremaUpdateStock(){
         try{
             /** @var MagicMike_Oprema_Model_Import_Api $api */
-            $api = Mage::getModel('magic_mike/api');
+            $api = Mage::getModel('magicmike_oprema/import_api');
 
             if ( !$productData = $api->call('update') ) {
                 Mage::log(

@@ -2,9 +2,7 @@
 
 class MagicMike_Oprema_Model_Import_Api
 {
-    protected $timeout = 600;
     protected $helper;
-
 
     public function __construct()
     {
@@ -13,8 +11,11 @@ class MagicMike_Oprema_Model_Import_Api
 
     /**
      * @param $url
-     * @param $arguments
-     * @param $method
+     * @param null $arguments
+     * @param string $method
+     * @param null $data
+     * @return mixed
+     * @throws Exception
      */
     public function call($url, $arguments = null, $method = 'GET', $data = null)
     {

@@ -6,6 +6,11 @@
         </MagicMike_Oprema>
     </modules>
     <global>
+        <models>
+            <magicmike_oprema>
+                <class>MagicMike_Oprema_Model</class>
+            </magicmike_oprema>
+        </models>
         <helpers>
             <magicmike_oprema>
                 <class>MagicMike_Oprema_Helper</class>
@@ -19,7 +24,7 @@
                     <cron_expr>*/15 * * * *</cron_expr>
                 </schedule>
                 <run>
-                    <model>magicmike_oprema/import/stanje::opremaUpdateStock</model>
+                    <model>magicmike_oprema/stanje::opremaUpdateStock</model>
                 </run>
             </oprema_update_stock>
         </jobs>
