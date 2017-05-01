@@ -41,6 +41,4 @@ class MagicMike_Oprema_Model_Stanje
             Mage::log($e->getMessage());
         }
     }
-
-
 }
